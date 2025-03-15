@@ -10,7 +10,7 @@ spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels: 
-      app: backend
+      app: frontend
       tier: app
       purpose: Deployment
   template:
