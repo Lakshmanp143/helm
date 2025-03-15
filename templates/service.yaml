@@ -6,9 +6,9 @@ metadata:
 spec: 
   type: LoadBalancer
   selector:  #labels are used as selectors
-    app: frontend
-    tier: app
-    purpose: Deployment
+    app: nginx
+    tier: frontend
+    purpose: deployment
   ports:
   - protocol: TCP
     port: 80    #service port

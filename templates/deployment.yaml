@@ -3,22 +3,22 @@ apiVersion: apps/v1
 metadata:
   name: nginx
   labels:
-    app: frontend
-    tier: app 
-    purpose: Deployment
+    app: nginx
+    tier: frontend
+    purpose: deployment
 spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels: 
-      app: frontend
-      tier: app
-      purpose: Deployment
+      app: nginx
+      tier: frontend
+      purpose: deployment
   template:
     metadata:
       labels: 
-        app: frontend
-        tier: app
-        purpose: Deployment
+        app: nginx
+        tier: frontend
+        purpose: deployment
     spec:
       containers:
       - name: nginx
