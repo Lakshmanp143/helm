@@ -1,5 +1,5 @@
 deployment:
   replicas: 2
-  version: latest
+  imageVersion: latest
 service:
   nodePort: 30008
