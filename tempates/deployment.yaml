@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: nginx
   labels:
-    app: backend
+    app: frontend
     tier: app 
     purpose: Deployment
 spec:
@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       labels: 
-        app: backend
+        app: frontend
         tier: app
         purpose: Deployment
     spec:
